@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "build": "sh ./scripts/build.sh",
-    "build:ts": "ts-node ./scripts/esbuild.ts",
+    "build:ts": "ts-node ./esbuild.ts",
     "dev": "sh ./scripts/build.sh && cross-env NODE_ENV=test node -r dotenv/config dist/main.js",
     "zip:main": "sh ./scripts/build.sh && sh ./scripts/main-zip.sh",
     "zip:webhook": "sh ./scripts/build.sh && sh ./scripts/webhook-zip.sh"
